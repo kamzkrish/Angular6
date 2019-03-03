@@ -1,0 +1,94 @@
+h1{
+ text-align: center;
+ color: darkblue;
+
+}
+
+.placeholder{
+text-align:center;
+margin :0 0 0 600px;
+font-weight: italic;
+border-radius: 200px;
+background:rgb(202, 221, 228);
+height:30px;
+border:1px solid blue;
+
+}
+
+.placeholder:active{
+  background:grey;
+}
+
+table { width: 700px;
+    
+    margin: 0 auto o auto;
+    border-collapse: collapse;
+    border-spacing:0;
+    font-family: sans-serif;
+ 
+    margin:20px 0px 10px 50px;
+    table-layout: auto;
+  
+    
+     }
+     table.center {
+      margin-left:auto; 
+      margin-right:auto;
+    }
+
+  button{
+     width :100px;
+     height: 40px;
+     border-radius: 60px;
+     background:lightgray;
+     text-align: center;
+     color: darkblue;
+     font-weight: bold;
+     font-family: sans-serif;
+
+
+  }
+
+  button:hover{
+  
+    background:red;
+  }
+   
+
+  button:active{
+    background:blue;
+  }
+
+th, td{
+    border:1px solid transparent;
+    text-align:center;
+    height:45px;
+   
+}
+th{
+
+  font-weight:bold;
+  color: black;
+  background:lightblue;
+
+}
+
+td{
+ background: #FAFAFA;
+
+}
+
+tr:nth-child(even) td{
+
+    background: #F1F1F1; 
+
+}
+
+tr:nth-child(odd) td{
+    background-color: #FEFEFE;
+}
+
+  tr td:hover {
+    background: #666; 
+    color: red; 
+}

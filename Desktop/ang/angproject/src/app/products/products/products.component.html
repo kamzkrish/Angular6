@@ -1,0 +1,50 @@
+<router-outlet> </router-outlet>
+<h1>
+  {{prodout}}
+  
+  <a href="#" [routerLink]="['create']"> <button>Create</button></a>
+
+</h1>
+
+<input [(ngModel)] = 'filterBy' class='placeholder' type='text' placeholder="Filter Product">
+<table  *ngIf= "products && products.length"  class='table'>
+
+  <tr>
+     <th> <button (click)='myClickfn()' >
+       {{imagedisplay ? 'Hide image' : 'Show image'}} 
+      
+      </button> </th>
+     <th>Produce Name</th>
+     <th>Price</th>
+     <th>Code</th>
+     <th>Rating</th>
+
+  </tr>
+
+ <tr *ngFor = "let product of products | products:filterBy"> 
+   <td> 
+     <img *ngIf= 'imagedisplay' [src] = "product.imageUrl" style=' width:30px'>
+   </td>
+   
+   <td>
+     
+    <a href='#' [routerLink] = "['/products', product.productCode]" >
+
+      {{product.productName}}
+
+    </a>
+  </td>
+   <td>{{product.price}}</td>
+   <td>{{product.productCode}}</td>
+   <td>
+
+    <app-rating   [rating]="product.starRating" (ratingtoparent)= "ratefnparent($event)">  </app-rating>
+  
+   </td>
+
+ </tr>
+ 
+
+  
+
+</table>

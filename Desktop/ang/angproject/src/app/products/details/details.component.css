@@ -1,0 +1,22 @@
+button{
+    width :100px;
+    height: 40px;
+    border-radius: 60px;
+    background:lightgray;
+    text-align: center;
+    color: darkblue;
+    font-weight: bold;
+    font-family: sans-serif;
+
+
+ }
+
+ button:hover{
+ 
+   background:red;
+ }
+  
+
+ button:active{
+   background:blue;
+ }
